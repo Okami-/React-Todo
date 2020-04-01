@@ -1,0 +1,139 @@
+.App {
+  font-family: arial, sans-serif;
+  text-align: center;
+}
+
+#root {
+  margin: 0 auto;
+  width: 550px;
+}
+
+#root .page-title {
+  text-align: center;
+}
+
+.trns-text {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/990140/download.png) -20px -20px
+    no-repeat;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  display: block;
+  font-size: 75px;
+  font-family: arial;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: -5px;
+  background-size: cover;
+}
+
+.todo-container {
+  display: block;
+  text-align: center;
+  -webkit-box-shadow: -1px 4px 50px 18px rgba(167, 167, 167, 0.36);
+  box-shadow: -1px 4px 50px 18px rgba(167, 167, 167, 0.36);
+  border-radius: 5px 5px 5px 5px;
+  border-collapse: separate;
+  width: 100%;
+}
+
+input.todo-entry {
+  padding-left: 30px;
+  margin-left: 0px;
+  display: block;
+  height: 75px;
+  border: none;
+  font-size: 30px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  color: #626262;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+input.todo-entry:focus {
+  outline: none;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+}
+
+ul.todo-list {
+  margin: 0;
+  padding-left: 0;
+}
+
+ul.todo-list li.completed {
+  text-decoration: line-through;
+}
+
+ul.todo-list li {
+  list-style: none;
+  font-size: 20px;
+  border-bottom: 1px solid #dbdbdb;
+  text-align: left;
+  position: relative;
+}
+
+ul.todo-list li:first-child {
+  border-top: 1px solid #ddd;
+}
+
+ul.todo-list li:last-child {
+  border-bottom: none;
+}
+
+ul.todo-list li label {
+  margin-left: 20px;
+  color: #626262;
+  font-size: 30px;
+  padding: 15px 15px 15px 50px;
+  display: block;
+}
+
+ul.todo-list input.complete-todo {
+  width: 2.5em;
+  height: 2.5em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: default;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 15px;
+  text-align: center;
+  margin: auto 0;
+}
+ul.todo-list input.complete-todo:checked {
+  background-color: #4f8585;
+  cursor: default;
+  color: red;
+}
+ul.todo-list button.delete-todo-item {
+  border: none;
+  background-color: transparent;
+  float: right;
+  margin-right: 20px;
+  display: block;
+  outline: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 10px;
+}
+
+ul.todo-list button.delete-todo-item:before {
+  border: none;
+  content: "x";
+  font-weight: bold;
+  font-size: 25px;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  color: #a01d1e;
+  font-family: "Raleway", sans-serif;
+}
